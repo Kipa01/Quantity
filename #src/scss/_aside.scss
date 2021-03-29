@@ -1,0 +1,73 @@
+.main {
+   &__side {
+      flex: 0 0 255px;
+   }
+   &__menu {
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      background-color: #262626;
+      margin-bottom: 30px;
+   }
+   &__look {
+      width: 100%;
+      height: 330px;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+      border-radius: 6px;
+      background-color: #262626;
+   }
+}
+.menu-main {
+   &__item {
+      padding: 20px 15px 20px 15px;
+      display: flex;
+      align-items: center;
+      cursor: pointer;
+      position: relative;
+      &:after {
+         content: "";
+         position: absolute;
+         right: 15px;
+         top: 50%;
+         transform: translate(0%, -50%);
+         background: url("../images/icons/arrow-right.svg") no-repeat center;
+         width: 6px;
+         height: 10px;
+      }
+      & + & {
+         border-top: 1px solid #303030;
+      }
+   }
+
+   &__icon {
+      margin-right: 15px;
+   }
+
+   &__link {
+      color: #808080;
+      font-size: 13px;
+      width: 100%;
+   }
+}
+
+.look-main {
+   &__body {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+   }
+   &__title {
+      font-size: 20px;
+      color: #f2f2f2;
+      margin-bottom: 10px;
+      line-height: 30px;
+   }
+
+   &__subtitle {
+      color: #808080;
+      line-height: 30px;
+      text-align: center;
+   }
+}

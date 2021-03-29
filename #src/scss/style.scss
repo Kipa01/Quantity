@@ -1,0 +1,131 @@
+//==========ПОДКЛЮЧЕНИЕ ШРИФТОВ==========//
+
+//==========/ПОДКЛЮЧЕНИЕ ШРИФТОВ==========//
+
+//==========ПЕРЕМЕННЫЕ==========//
+
+//==========/ПЕРЕМЕННЫЕ==========//
+
+//==========ОБНУЛЕНИЕ И ОБЩИЕ ПАРАМЕТРЫ==========//
+
+body {
+	font-family: "Roboto", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 20px;
+	color: #d9d9d9;
+	background-color: #1a1a1a;
+	&.lock {
+		overflow: hidden;
+	}
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	outline: none;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+h1,
+h2,
+h3 h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+
+ul,
+li {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+.slick-list {
+	overflow: hidden;
+}
+
+.slick-track {
+	display: flex;
+	align-items: flex-start;
+}
+
+.content-main {
+	margin-top: 30px;
+	&__container {
+		display: flex;
+		@media (max-width: 890px) {
+			flex-wrap: wrap;
+		}
+	}
+	&__body {
+		flex: 1 1 auto;
+		padding-left: 30px;
+		@media (max-width: 890px) {
+			flex-basis: 100%;
+			padding-left: 0;
+		}
+	}
+	@media (max-width: 660px) {
+		margin-top: 0;
+	}
+}
+
+.main {
+	margin-bottom: 30px;
+	&__side {
+		@media (max-width: 890px) {
+			flex: 1 1 100%;
+			margin-bottom: 30px;
+		}
+	}
+}
+
+svg path {
+	stroke: inherit;
+	stroke-width: inherit;
+	fill: inherit;
+}
+
+//==========/ОБНУЛЕНИЕ И ОБЩИЕ ПАРАМЕТРЫ==========//
+
+//==========ОБОЛОЧКА==========//
+
+// .wrapper {
+
+// }
+
+//==========ОБОЛОЧКА==========//
+
+//==========ОСНОВНАЯ СЕТКА==========//
+
+.container {
+	width: 100%;
+	max-width: 1140px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
+
+//==========/ОСНОВНАЯ СЕТКА==========//
+
+//========ПОДКЛЮЧЕНИЕ ФАЙЛОВ СО СТИЛЯМИ========//
+
+@import "_header";
+@import "_mainslider";
+@import "_info";
+@import "_aside";
+@import "_tabs";
+@import "_footer";
+
+//========/ПОДКЛЮЧЕНИЕ ФАЙЛОВ СО СТИЛЯМИ========//
